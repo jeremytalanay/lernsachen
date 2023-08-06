@@ -1,0 +1,235 @@
+@font-face {
+  font-family: 'chapaza_italicitalic';
+  src: url('fonts/chapaza_italic-webfont.woff2') format('woff2'),
+       url('fonts/chapaza_italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'chapazaregular';
+  src: url('fonts/chapaza-webfont.woff2') format('woff2'),
+       url('fonts/chapaza-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root{
+  --primary: #2E3192; /* BLUE */
+  --pink: #ee2a7b;
+}
+
+body{
+  margin: 0;
+  font-family: 'chapazaregular', serif;
+}
+.container{
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.btn{
+  display: inline-block;
+  background-color: #fff;
+  font-size: 18px;
+  padding: 14px 20px;
+  color: #000;
+  text-decoration: none;
+  border-radius: 30px;
+  line-height: 1;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: #eee;
+
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+.spacer{
+  height: 40px;
+  display: block;
+  width: 100%;
+}
+.spacer.spacer-m{
+  height: 28px;
+}
+.spacer.spacer-l{
+  height: 100px;
+}
+.text-center{
+  text-align: center;
+}
+h2{
+  font-size: 32px;
+}
+a{
+  color: var(--primary);
+}
+a:hover{
+  color: var(--pink);
+}
+
+.header{
+  border-bottom: 1px solid #f1f1f1;
+}
+nav.navigation{
+  padding: 20px 0;
+}
+nav.navigation > .row{
+  display: flex;
+  align-items: center;
+}
+nav .nav-brand img{
+  max-width: 200px;
+  display: inline-block;
+}
+nav.navigation .nav-menu{
+  text-align: right;
+  flex: 1 0 auto;
+}
+nav.navigation .menu{
+  padding: 0;
+  margin: 0;
+}
+nav.navigation .menu li{
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+nav.navigation .menu li a{
+  display: inline-block;
+  color: #000;
+  font-size: 14px;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 8px 10px;
+}
+nav.navigation .menu li:hover a{
+  color: var(--primary);
+
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+}
+
+.banner {
+  min-height: calc(100vh - 90px);
+  background-color: #2E3192;
+  position: relative;
+}
+.banner-slides{
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.banner-slide{
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+}
+.banner-slide,
+.slick-list,
+.slick-track {
+  height: 100%;
+}
+.slide-content{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.slide-content > div{
+  flex: 1 0 auto;
+}
+.slide-content .heading{
+  margin: 0 0 20px 0;
+  color: #fff;
+  font-size: 45px;
+}
+
+@media (max-width: 767px) {
+  .banner {
+    min-height: 650px;
+  }
+}
+
+.image-cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.image-cards > .image-card{
+  flex: 1 0 33.33333333333333%;
+  max-width: 33.33333333333333%;
+  position: relative;
+  box-sizing: border-box;
+}
+.image-card .image-card-content{
+  padding: 10px;
+  box-sizing: border-box;
+}
+.image-card .image-card-content h3{
+  margin: 0;
+}
+.image-card .image-card-content img{
+  max-width: 100%;
+  display: block;
+  border: 5px solid var(--pink);
+}
+
+.danke{
+  min-height: 200px;
+}
+.danke .danke-banner{
+  max-width: 100%;
+}
+.danke p{
+  font-size: 24px;
+  color: var(--primary);
+}
+
+.content-3 .row{
+  display: flex;
+  gap: 120px;
+}
+.content-3 .column{
+  flex: 0 1 50%;
+  max-width: 50%;
+}
+.content-3 .content-3-image{
+  max-width: 100%;
+}
+
+.content-4{
+  min-height: 650px;
+  background-color: #222;
+}
+
+.content-5 .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  width: 100%;
+}
+.content-5 .column{
+  flex: 1 0 calc(50% - 100px/2);
+  max-width: calc(50% - 100px/2);
+  margin-bottom: -40px;
+}
+
+.content-6{
+  min-height: 784px;
+  width: 100%;
+  background-image: url(../images/content-6.jpg);
+  background-position: center center;
+  background-size: cover;
+}
