@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lernsachen</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -223,11 +227,39 @@
     <!--
       FOOTER
     -->
-    <footer style="height:700px; background-color:#222">
-    
+    <footer class="footer">
+      <div class="container">
+        <h3 class="text-center">Let's keep in contact</h3>
+        <div class="spacer"></div>
+        <div class="contact" id="kontakt">
+          <form method="POST" action="/">
+            <div class="form-group">
+              <label>Name der Einrichtung *</label>
+              <input class="form-content" type="text" placeholder="Name der Einrichtung" />
+            </div>
+            <div class="form-group">
+              <label>Kontaktperson *</label>
+              <input class="form-content" type="text" placeholder="Kontaktperson" />
+            </div>
+            <div class="form-group">
+              <label>E-Mail *</label>
+              <input class="form-content" type="email" placeholder="E-Mail" />
+            </div>
+            <div class="form-group">
+              <label>Telefonnummer </label>
+              <input class="form-content" type="text" placeholder="Telefonnummer" />
+            </div>
+            <div class="form-group">
+              <button class="btn btn-block">Submit</button>
+            </div>
+          </form>
+          <p class="contact-url"><a href="/impressum.html">Impressum</a> | Bitte beachten Sie unsere <a href="/datenschutzerklarung.html" style="text-decoration:underline">Datenschutzerklärung</a></p>
+  
+        </div>
+      </div>
     </footer>
 
-    
+
     <script src="js/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
