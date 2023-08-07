@@ -153,7 +153,7 @@
             <img class="content-3-image" src="images/content-3.jpg" alt="Medienkompetenz stärken!" />
           </div>
           <div class="column">
-            <h2>Medienkompetenz stärken!</h2>
+            <h2>Medienkompetenz stärken</h2>
             <p>Die Bedeutung von Medienkompetenz wächst im schulischen Umfeld stetig. Viele Jugendliche konsumieren digitale Medien nur, die kritische und proaktive Auseinandersetzung kommt meist zu kurz. Leider sind auch viele Eltern nicht in der Lage ihren Nachwuchs im Umgang mit Instagram, Tiktok und Co. entsprechend zu begleiten. Hier kommt der Schule eine immer größer werdende Bedeutung zu. Als Lieferant technischer Mittel sehen wir uns als hier Möglichmacher.  Sie benötigen andere technische Mittel für ihren Schulalltag? Tablethüllen für eine Projektgruppe oder andere Materialien? <a href="#kontakt">Sprechen</a> Sie uns einfach an, wir kümmern uns!</p>
           </div>
         </div>
@@ -231,26 +231,37 @@
       <div class="container">
         <h3 class="text-center">Let's keep in contact</h3>
         <div class="spacer"></div>
-        <div class="contact" id="kontakt">
-          <form method="POST" action="/">
+        <div class="contact op-contact-form" id="kontakt">
+          <form id="email-form" method="POST">
             <div class="form-group">
               <label>Name der Einrichtung *</label>
-              <input class="form-content" type="text" placeholder="Name der Einrichtung" />
+              <input name="name" class="form-content required" type="text" placeholder="Name der Einrichtung" />
             </div>
             <div class="form-group">
               <label>Kontaktperson *</label>
-              <input class="form-content" type="text" placeholder="Kontaktperson" />
+              <input name="Kontaktperson" class="form-content required" type="text" placeholder="Kontaktperson" />
             </div>
             <div class="form-group">
               <label>E-Mail *</label>
-              <input class="form-content" type="email" placeholder="E-Mail" />
+              <input name="Emailadresse" class="form-content required" type="email" placeholder="E-Mail" />
             </div>
             <div class="form-group">
               <label>Telefonnummer </label>
-              <input class="form-content" type="text" placeholder="Telefonnummer" />
+              <input name="Telefonnummer" class="form-content" type="text" placeholder="Telefonnummer" />
+            </div>
+            <div class="captcha-block">
+              <label id="captchatext" for="captchainput" class="field-label-4"></label>
+              <input type="text" class="field captcha-field w-input" maxlength="256" name="captca-field" data-name="captca-field" placeholder="" id="captchainput" />
+
+              <div id="op-captcha-error">
+                Bitte überprüfen Sie das Ergebnis!
+              </div>
             </div>
             <div class="form-group">
-              <button class="btn btn-block">Submit</button>
+              <div id="op-required-field-error" class="alert alert-danger">
+                Bitte füllen Sie die nötigen Informationen aus, um Ihre Anfrage zu senden.
+              </div>
+              <input type="submit" id="email-form-submit" class="btn btn-block" disabled value="Submit">
             </div>
           </form>
           <p class="contact-url"><a href="/impressum.html">Impressum</a> | Bitte beachten Sie unsere <a href="/datenschutzerklarung.html" style="text-decoration:underline">Datenschutzerklärung</a></p>
